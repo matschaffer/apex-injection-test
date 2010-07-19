@@ -1,0 +1,4 @@
+sf.username  = myaccount@dev.com
+sf.password  = mypassword
+sf.token     = mysecuritytoken
+sf.serverurl = https://login.salesforce.com

@@ -1,0 +1,8 @@
+<apex:page controller="InjectionController" showheader="true" sidebar="true" tabStyle="Injection__tab">
+  <p>Opportunity name injection: {!name}</p>
+  <p>Html injection: {!htmlInjection}</p>
+  <p>Apex output injection: <apex:outputText value="{!htmlInjection}" /></p>
+  <script type="text/javascript">
+    var name = "injected with {!javascriptInjection}";
+  </script>
+</apex:page>

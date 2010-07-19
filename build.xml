@@ -1,0 +1,14 @@
+<project name="Apex Injection Test" default="deploy" basedir=".">
+  <property file="build.properties"/>
+  <property environment="env"/>
+
+  <taskdef resource="com/salesforce/antlib.xml"
+    classpath="lib/ant-salesforce.jar" />
+
+  <target name="deploy">
+    <deploy username="${sf.username}"
+      password="${sf.password}${sf.token}"
+      serverurl="${sf.serverurl}"
+      deployRoot="src" />
+  </target>
+</project>
